@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.modules.css'
+import './App.module.css'
 import {Cards , Charts , Countrypicker } from './components'
 import {fetchData} from './api'
 
