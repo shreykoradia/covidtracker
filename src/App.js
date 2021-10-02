@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from'./App.module.css'
-import {Cards , Charts , Countrypicker } from './components'
+import {Cards , Charts , Countrypicker , Preventions } from './components'
 import {fetchData} from './api'
 import coronaImage from './images/image.png' 
 
@@ -29,6 +29,7 @@ handleCountryChange = async(country)=>{
           <Cards data={data} />
           <Countrypicker handleCountryChange={this.handleCountryChange} />
           <Charts  data={data} country={country} />
+          <Preventions />
           
       </div>
     );
